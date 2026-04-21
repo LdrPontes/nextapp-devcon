@@ -1,0 +1,7 @@
+{
+  "enabledPlugins": {
+    "upgrading-react-native@callstack-agent-skills": true,
+    "react-native-brownfield-migration@callstack-agent-skills": true,
+    "react-native-best-practices@callstack-agent-skills": true
+  }
+}
