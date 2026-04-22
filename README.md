@@ -17,6 +17,9 @@ This project is the base for two hands-on articles about migrating user data fro
 ├── android/        # Native Android app (SharedPreferences)
 ├── ios/            # Native iOS app (Keychain / UserDefaults)
 ├── rn/             # React Native layer (MMKV)
+├── poc/ 
+│   ├──             # Brownfield POC ios, android, and rn
+│   └──             # Greenfield POC ios, android, and rn
 └── article/
 │   ├── brownfield.md  # Article 1 draft — brownfield approach
 │   └── greenfield.md  # Article 2 draft — greenfield approach
