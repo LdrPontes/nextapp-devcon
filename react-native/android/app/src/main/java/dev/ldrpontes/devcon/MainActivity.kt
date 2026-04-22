@@ -1,4 +1,4 @@
-package com.rnapp
+package dev.ldrpontes.devcon
 import expo.modules.ReactActivityDelegateWrapper
 
 import com.facebook.react.ReactActivity

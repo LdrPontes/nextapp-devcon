@@ -1,4 +1,4 @@
-package com.rnapp
+package dev.ldrpontes.devcon
 import android.content.res.Configuration
 import expo.modules.ExpoReactHostFactory
 

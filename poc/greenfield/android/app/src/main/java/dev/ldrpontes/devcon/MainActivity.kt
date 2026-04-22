@@ -24,8 +24,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.security.crypto.EncryptedSharedPreferences
-import androidx.security.crypto.MasterKey
 import dev.ldrpontes.devcon.ui.theme.NexappDevConTheme
 
 class MainActivity : ComponentActivity() {
@@ -46,16 +44,7 @@ class MainActivity : ComponentActivity() {
 fun StorageScreen(modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val prefs = remember {
-        val masterKey = MasterKey.Builder(context)
-            .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
-            .build()
-        EncryptedSharedPreferences.create(
-            context,
-            "SecureStore",
-            masterKey,
-            EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
-            EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
-        )
+        context.getSharedPreferences("NativeStorage", android.content.Context.MODE_PRIVATE)
     }
 
     var inputText by remember { mutableStateOf("") }
