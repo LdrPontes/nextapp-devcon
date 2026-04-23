@@ -18,6 +18,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         ReactNativeBrownfield.shared.startReactNative(onBundleLoaded: {
             print("React Native bundle loaded")
         })
+        MigrationBridge.shared.start()
         return true
     }
 }

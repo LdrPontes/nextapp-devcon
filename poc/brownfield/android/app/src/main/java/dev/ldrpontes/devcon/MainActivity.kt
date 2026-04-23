@@ -15,6 +15,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -50,6 +51,7 @@ fun StorageScreen(modifier: Modifier = Modifier) {
 
     var inputText by remember { mutableStateOf("") }
     var savedValue by remember { mutableStateOf(prefs.getString("username", "") ?: "") }
+    val migratedUsername by MigrationBridge.migratedUsername.collectAsState()
 
     Column(
         modifier = modifier
@@ -80,6 +82,10 @@ fun StorageScreen(modifier: Modifier = Modifier) {
 
         if (savedValue.isNotEmpty()) {
             Text(text = "Stored: $savedValue", color = Color.Gray)
+        }
+
+        migratedUsername?.let {
+            Text(text = "MMKV (migrated): $it", color = Color(0xFF2A9D8F))
         }
 
         Button(

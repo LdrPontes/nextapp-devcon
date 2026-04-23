@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var inputText: String = ""
     @State private var savedValue: String = UserDefaults.standard.string(forKey: "username") ?? ""
+    @ObservedObject private var migration = MigrationBridge.shared
 
     var body: some View {
         NavigationStack {
@@ -33,6 +34,11 @@ struct ContentView: View {
                 if !savedValue.isEmpty {
                     Text("Stored: \(savedValue)")
                         .foregroundStyle(.secondary)
+                }
+
+                if let migrated = migration.migratedUsername {
+                    Text("MMKV (migrated): \(migrated)")
+                        .foregroundStyle(.green)
                 }
 
                 NavigationLink {
