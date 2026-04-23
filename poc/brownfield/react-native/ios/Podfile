@@ -17,6 +17,10 @@ end
 target 'devconrn' do
   config = use_native_modules!
 
+  target 'devconrnframework' do
+    inherit! :complete
+  end
+
   use_react_native!(
     :path => config[:reactNativePath],
     # An absolute path to your application root.

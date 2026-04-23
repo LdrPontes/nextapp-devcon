@@ -1,0 +1,76 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "devconrnframework",
+    "printedName": "devconrnframework",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "ReactBrownfield",
+        "printedName": "ReactBrownfield",
+        "declKind": "Import",
+        "moduleName": "devconrnframework",
+        "declAttributes": [
+          "Exported"
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "ReactNativeBundle",
+        "printedName": "ReactNativeBundle",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bundle",
+            "printedName": "Foundation.Bundle",
+            "usr": "c:objc(cs)NSBundle"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:17devconrnframework17ReactNativeBundleSo8NSBundleCvp",
+        "mangledName": "$s17devconrnframework17ReactNativeBundleSo8NSBundleCvp",
+        "moduleName": "devconrnframework",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bundle",
+                "printedName": "Foundation.Bundle",
+                "usr": "c:objc(cs)NSBundle"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:17devconrnframework17ReactNativeBundleSo8NSBundleCvg",
+            "mangledName": "$s17devconrnframework17ReactNativeBundleSo8NSBundleCvg",
+            "moduleName": "devconrnframework",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "devconrnframework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

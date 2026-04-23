@@ -6,8 +6,36 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D7E733D92F9A43FE00638766 /* devconrnframework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E733D32F9A43E100638766 /* devconrnframework.xcframework */; };
+		D7E733DA2F9A43FE00638766 /* devconrnframework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7E733D32F9A43E100638766 /* devconrnframework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7E733DC2F9A43FF00638766 /* hermesvm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E733D52F9A43E600638766 /* hermesvm.xcframework */; };
+		D7E733DD2F9A43FF00638766 /* hermesvm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7E733D52F9A43E600638766 /* hermesvm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7E733DE2F9A440000638766 /* ReactBrownfield.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E733D72F9A43EA00638766 /* ReactBrownfield.xcframework */; };
+		D7E733DF2F9A440000638766 /* ReactBrownfield.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7E733D72F9A43EA00638766 /* ReactBrownfield.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7E733DB2F9A43FE00638766 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D7E733DD2F9A43FF00638766 /* hermesvm.xcframework in Embed Frameworks */,
+				D7E733DF2F9A440000638766 /* ReactBrownfield.xcframework in Embed Frameworks */,
+				D7E733DA2F9A43FE00638766 /* devconrnframework.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D71713A02F98F20400209BD3 /* devcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = devcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E733D32F9A43E100638766 /* devconrnframework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = devconrnframework.xcframework; sourceTree = "<group>"; };
+		D7E733D52F9A43E600638766 /* hermesvm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = hermesvm.xcframework; sourceTree = "<group>"; };
+		D7E733D72F9A43EA00638766 /* ReactBrownfield.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ReactBrownfield.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E733DC2F9A43FF00638766 /* hermesvm.xcframework in Frameworks */,
+				D7E733DE2F9A440000638766 /* ReactBrownfield.xcframework in Frameworks */,
+				D7E733D92F9A43FE00638766 /* devconrnframework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +65,9 @@
 			children = (
 				D71713A22F98F20400209BD3 /* devcon */,
 				D71713A12F98F20400209BD3 /* Products */,
+				D7E733D32F9A43E100638766 /* devconrnframework.xcframework */,
+				D7E733D52F9A43E600638766 /* hermesvm.xcframework */,
+				D7E733D72F9A43EA00638766 /* ReactBrownfield.xcframework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +89,7 @@
 				D717139C2F98F20400209BD3 /* Sources */,
 				D717139D2F98F20400209BD3 /* Frameworks */,
 				D717139E2F98F20400209BD3 /* Resources */,
+				D7E733DB2F9A43FE00638766 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
